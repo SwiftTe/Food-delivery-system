@@ -1,101 +1,47 @@
 QuickBite/
-├─ quickbite/
-│  ├─ accounts/
-│  │  ├─ __pycache__/
-│  │  │  ├─ __init__.cpython-313.pyc
-│  │  │  ├─ admin.cpython-313.pyc
-│  │  │  ├─ apps.cpython-313.pyc
-│  │  │  ├─ models.cpython-313.pyc
-│  │  │  ├─ urls.cpython-313.pyc
-│  │  │  └─ views.cpython-313.pyc
-│  │  ├─ migrations/
-│  │  │  ├─ __pycache__/
-│  │  │  │  └─ __init__.cpython-313.pyc
-│  │  │  └─ __init__.py
-│  │  ├─ templates/
-│  │  │  ├─ login.html
-│  │  │  └─ register.html
-│  │  ├─ __init__.py
-│  │  ├─ admin.py
-│  │  ├─ apps.py
-│  │  ├─ models.py
-│  │  ├─ tests.py
-│  │  ├─ urls.py
-│  │  └─ views.py
-│  ├─ core/
-│  │  ├─ __pycache__/
-│  │  │  ├─ __init__.cpython-313.pyc
-│  │  │  ├─ admin.cpython-313.pyc
-│  │  │  ├─ apps.cpython-313.pyc
-│  │  │  ├─ models.cpython-313.pyc
-│  │  │  └─ views.cpython-313.pyc
-│  │  ├─ migrations/
-│  │  │  ├─ __pycache__/
-│  │  │  │  ├─ __init__.cpython-313.pyc
-│  │  │  │  └─ 0001_initial.cpython-313.pyc
-│  │  │  ├─ __init__.py
-│  │  │  └─ 0001_initial.py
-│  │  ├─ templates/
-│  │  │  └─ home.html
-│  │  ├─ __init__.py
-│  │  ├─ admin.py
-│  │  ├─ apps.py
-│  │  ├─ models.py
-│  │  ├─ tests.py
-│  │  └─ views.py
-│  ├─ orders/
-│  │  ├─ __pycache__/
-│  │  │  ├─ __init__.cpython-313.pyc
-│  │  │  ├─ admin.cpython-313.pyc
-│  │  │  ├─ apps.cpython-313.pyc
-│  │  │  └─ models.cpython-313.pyc
-│  │  ├─ migrations/
-│  │  │  ├─ __pycache__/
-│  │  │  │  ├─ __init__.cpython-313.pyc
-│  │  │  │  └─ 0001_initial.cpython-313.pyc
-│  │  │  ├─ __init__.py
-│  │  │  └─ 0001_initial.py
-│  │  ├─ __init__.py
-│  │  ├─ admin.py
-│  │  ├─ apps.py
-│  │  ├─ models.py
-│  │  ├─ tests.py
-│  │  ├─ urls.py
-│  │  └─ views.py
-│  ├─ quickbite/
-│  │  ├─ __pycache__/
-│  │  │  ├─ __init__.cpython-313.pyc
-│  │  │  ├─ settings.cpython-313.pyc
-│  │  │  ├─ urls.cpython-313.pyc
-│  │  │  └─ wsgi.cpython-313.pyc
-│  │  ├─ __init__.py
-│  │  ├─ asgi.py
-│  │  ├─ settings.py
-│  │  ├─ urls.py
-│  │  └─ wsgi.py
-│  ├─ restaurant/
-│  │  ├─ __pycache__/
-│  │  │  ├─ __init__.cpython-313.pyc
-│  │  │  ├─ admin.cpython-313.pyc
-│  │  │  ├─ apps.cpython-313.pyc
-│  │  │  └─ models.cpython-313.pyc
-│  │  ├─ migrations/
-│  │  │  ├─ __pycache__/
-│  │  │  │  ├─ __init__.cpython-313.pyc
-│  │  │  │  ├─ 0001_initial.cpython-313.pyc
-│  │  │  │  └─ 0002_fooditem.cpython-313.pyc
-│  │  │  ├─ __init__.py
-│  │  │  ├─ 0001_initial.py
-│  │  │  └─ 0002_fooditem.py
-│  │  ├─ __init__.py
-│  │  ├─ admin.py
-│  │  ├─ apps.py
-│  │  ├─ models.py
-│  │  ├─ tests.py
-│  │  └─ views.py
-│  ├─ .gitignore
-│  ├─ db.sqlite3
-│  └─ manage.py
-├─ venv/
-│  
-└─ README.md
+│
+├── quickbite/                  # Main Django project
+│   ├── accounts/               # User authentication app
+│   │   ├── migrations/
+│   │   ├── templates/
+│   │   │   ├── login.html
+│   │   │   └── register.html
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── models.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   │
+│   ├── core/                   # Home page / main UI
+│   │   ├── migrations/
+│   │   ├── templates/
+│   │   │   └── home.html
+│   │   ├── admin.py
+│   │   ├── models.py
+│   │   └── views.py
+│   │
+│   ├── orders/                # Order system
+│   │   ├── migrations/
+│   │   ├── admin.py
+│   │   ├── models.py
+│   │   ├── urls.py
+│   │   └── views.py
+│   │
+│   ├── restaurant/           # Restaurant + food items
+│   │   ├── migrations/
+│   │   ├── admin.py
+│   │   ├── models.py
+│   │   └── views.py
+│   │
+│   ├── quickbite/            # Project config
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   ├── wsgi.py
+│   │   └── asgi.py
+│   │
+│   ├── db.sqlite3
+│   └── manage.py
+│
+├── venv/                     # Virtual environment (ignored in git)
+│
+└── README.md
